@@ -9,7 +9,7 @@
 
 import mysql.connector
 from Crypto.Cipher import AES
-from Crypto	import Random
+from Crypto import Random
 
 dbEntries = []		# User objects
 decryptHashes = []  # To Decrypt
