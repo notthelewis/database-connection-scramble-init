@@ -8,6 +8,7 @@
 #     -> );
 
 import mysql.connector
+from config import MYSQL
 from Crypto.Cipher import AES
 from Crypto import Random
 
@@ -15,11 +16,11 @@ dbEntries = []		# User objects
 decryptHashes = []  # To Decrypt
 encryptedPW = []	# Final product
 
-cnx = mysql.connector.connect(
-	user='uname',
-	password='pword',
-	host='127.0.0.1',
-	database='dbname')
+cnx = mysql.connector.connect (
+	user = MYSQL.user,
+	password = MYSQL.password,
+	host = MYSQL.host,
+	database = MYSQL.database)
 
 cursor = cnx.cursor()
 
