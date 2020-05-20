@@ -1,0 +1,7 @@
+# run pip3 install -r requirements.txt
+# This will install mysql-connnector and pycrypto
+# If there are issues with installing pycrypto, ensure that you have the python-dev program installed using your package manager of choice
+# dnf install python-dev, yum install python-dev or apt install python-dev
+
+mysql-connector
+pycrypto
